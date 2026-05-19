@@ -1,0 +1,21 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "lecstor-claude-plugins",
+  "description": "Personal Claude Code plugins — shared subagent configurations and workflow tooling.",
+  "owner": {
+    "name": "Jason",
+    "email": "jason@lecstor.com"
+  },
+  "plugins": [
+    {
+      "name": "context-management",
+      "description": "Subagent set for context isolation — coder, docs-lookup, test-runner, review, browser. Includes delegation rules to keep large tool outputs out of the main agent's context window.",
+      "author": {
+        "name": "Jason",
+        "email": "jason@lecstor.com"
+      },
+      "category": "workflow",
+      "source": "./plugins/context-management"
+    }
+  ]
+}
