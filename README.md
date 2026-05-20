@@ -10,7 +10,17 @@ Personal Claude Code plugin marketplace.
 
 ## Use this marketplace
 
-Add to `~/.claude/settings.json`:
+From inside Claude Code (CLI or desktop):
+
+```
+/plugin marketplace add lecstor/claude-plugins
+/plugin install context-management@lecstor-claude-plugins
+```
+
+Or run `/plugin` to browse interactively.
+
+<details>
+<summary>Manual install via <code>settings.json</code></summary>
 
 ```json
 {
@@ -28,4 +38,5 @@ Add to `~/.claude/settings.json`:
 }
 ```
 
-Restart Claude Code.
+Restart Claude Code after editing.
+</details>

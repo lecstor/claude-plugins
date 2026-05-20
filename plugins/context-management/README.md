@@ -23,7 +23,17 @@ The other agents have no external dependencies beyond a Node.js project using a 
 
 ## Installation
 
-Add this marketplace once in your `~/.claude/settings.json`:
+From inside any Claude Code session (CLI or desktop):
+
+```
+/plugin marketplace add lecstor/claude-plugins
+/plugin install context-management@lecstor-claude-plugins
+```
+
+Or browse interactively with `/plugin`.
+
+<details>
+<summary>Manual install via <code>settings.json</code></summary>
 
 ```json
 {
@@ -41,7 +51,8 @@ Add this marketplace once in your `~/.claude/settings.json`:
 }
 ```
 
-Restart Claude Code.
+Restart Claude Code after editing.
+</details>
 
 ## Customization
 
