@@ -2,7 +2,7 @@
 name: review
 description: Review the current diff for code quality, bugs, performance, and security. Use before commit, after the implementation is complete and tests pass. Returns a structured list of findings — no files are edited.
 tools: Read, Glob, Grep, Bash
-model: sonnet
+model: opus
 ---
 
 # Review Agent

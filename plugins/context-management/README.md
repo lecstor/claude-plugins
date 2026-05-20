@@ -9,7 +9,7 @@ Subagent set for Claude Code that keeps the main agent's context window lean by 
 | **coder** | sonnet | Execute fully-specified, mechanical code edits. Designed for parallel dispatch. Escalates back when anything is ambiguous. |
 | **docs-lookup** | haiku | Look up library/framework docs via Context7 MCP (if installed) or `WebFetch`. |
 | **test-runner** | haiku | Run `pnpm test` / `pnpm e2e` (or equivalents). Read-only — returns structured pass/fail report, never edits code. |
-| **review** | sonnet | Review the current diff for quality, bugs, performance, security. Returns severity-tagged findings. |
+| **review** | opus | Review the current diff for quality, bugs, performance, security. Returns severity-tagged findings. |
 | **browser** | sonnet | Drive Chrome via the **Claude in Chrome** MCP for UI verification. Saves screenshots to disk as JPEG q40 — never inline. |
 
 A `CLAUDE.md` ships with the plugin containing delegation rules that bias the primary agent toward using these subagents.
