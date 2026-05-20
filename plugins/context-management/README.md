@@ -23,14 +23,14 @@ The other agents have no external dependencies beyond a Node.js project using a 
 
 ## Installation
 
-From inside any Claude Code session (CLI or desktop):
+Use the **Claude Code CLI** — the desktop app doesn't currently expose `/plugin` and adding marketplaces through its UI is awkward. Start `claude` in a terminal, then:
 
 ```
 /plugin marketplace add lecstor/claude-plugins
 /plugin install context-management@lecstor-claude-plugins
 ```
 
-Or browse interactively with `/plugin`.
+Or browse interactively with `/plugin`. Once installed, the plugin works in both the CLI and the desktop app — only the install step needs the CLI.
 
 <details>
 <summary>Manual install via <code>settings.json</code></summary>

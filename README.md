@@ -10,14 +10,14 @@ Personal Claude Code plugin marketplace.
 
 ## Use this marketplace
 
-From inside Claude Code (CLI or desktop):
+Install via the **Claude Code CLI** — the desktop app doesn't expose `/plugin` and adding marketplaces through its UI is awkward. Start `claude` in a terminal, then:
 
 ```
 /plugin marketplace add lecstor/claude-plugins
 /plugin install context-management@lecstor-claude-plugins
 ```
 
-Or run `/plugin` to browse interactively.
+Or run `/plugin` to browse interactively. Plugins installed via the CLI are picked up by the desktop app automatically — they share the same `~/.claude/settings.json`.
 
 <details>
 <summary>Manual install via <code>settings.json</code></summary>
