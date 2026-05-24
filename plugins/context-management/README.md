@@ -10,14 +10,14 @@ Subagent set for Claude Code that keeps the main agent's context window lean by 
 | **docs-lookup** | haiku | Look up library/framework docs via Context7 MCP (if installed) or `WebFetch`. |
 | **test-runner** | haiku | Run `pnpm test` / `pnpm e2e` (or equivalents). Read-only — returns structured pass/fail report, never edits code. |
 | **review** | opus | Review the current diff for quality, bugs, performance, security. Returns severity-tagged findings. |
-| **browser** | sonnet | Drive Chrome via the **Claude in Chrome** MCP for UI verification. Saves screenshots to disk as JPEG q40 — never inline. |
+| **browser** | sonnet | Drive Chrome via the **chrome-devtools-mcp** connector for UI verification. Saves screenshots to disk as JPEG q40 — never inline. |
 
 A `CLAUDE.md` ships with the plugin containing delegation rules that bias the primary agent toward using these subagents.
 
 ## Prerequisites
 
 - **docs-lookup**: works without anything special, but is more useful with the [Context7 MCP](https://github.com/upstash/context7) connected.
-- **browser**: requires the [Claude in Chrome](https://www.anthropic.com/news/claude-for-chrome) MCP connector.
+- **browser**: requires the [chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) connector.
 
 The other agents have no external dependencies beyond a Node.js project using a standard package manager.
 
