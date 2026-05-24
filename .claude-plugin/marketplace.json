@@ -16,16 +16,6 @@
       },
       "category": "workflow",
       "source": "./plugins/context-management"
-    },
-    {
-      "name": "task-loop",
-      "description": "Drive a project's task list unattended — task-worker subagent completes one task end-to-end (implement, validate, commit, archive); a coordinator skill picks the next task, dispatches the worker, self-verifies, and loops. Designed for overnight runs where every step is a local commit.",
-      "author": {
-        "name": "Jason",
-        "email": "jason@lecstor.com"
-      },
-      "category": "workflow",
-      "source": "./plugins/task-loop"
     }
   ]
 }
