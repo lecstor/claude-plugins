@@ -8,6 +8,16 @@
   },
   "plugins": [
     {
+      "name": "basic",
+      "description": "Personal dev toolkit — subagents for context isolation and skills for domain-specific coding guidance.",
+      "author": {
+        "name": "Jason",
+        "email": "jason@lecstor.com"
+      },
+      "category": "workflow",
+      "source": "./plugins/basic"
+    },
+    {
       "name": "context-management",
       "description": "Subagent set for context isolation — coder, docs-lookup, test-runner, review, browser. Includes delegation rules to keep large tool outputs out of the main agent's context window.",
       "author": {

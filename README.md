@@ -6,7 +6,8 @@ Personal Claude Code plugin marketplace.
 
 | Plugin | Description |
 |---|---|
-| [context-management](plugins/context-management) | Subagent set for context isolation (coder, docs-lookup, test-runner, review, browser) plus delegation rules. |
+| [basic](plugins/basic) | Personal dev toolkit — subagents for context isolation and skills for domain-specific coding guidance. |
+| [context-management](plugins/context-management) | Subagent set for context isolation — coder, docs-lookup, test-runner, review, browser. |
 
 ## Use this marketplace
 
@@ -14,7 +15,7 @@ Install via the **Claude Code CLI** — the desktop app doesn't expose `/plugin`
 
 ```
 /plugin marketplace add lecstor/claude-plugins
-/plugin install context-management@lecstor-claude-plugins
+/plugin install basic@lecstor-claude-plugins
 ```
 
 Or run `/plugin` to browse interactively. Plugins installed via the CLI are picked up by the desktop app automatically — they share the same `~/.claude/settings.json`.
@@ -33,7 +34,7 @@ Or run `/plugin` to browse interactively. Plugins installed via the CLI are pick
     }
   },
   "enabledPlugins": {
-    "context-management@lecstor-claude-plugins": true
+    "basic@lecstor-claude-plugins": true
   }
 }
 ```

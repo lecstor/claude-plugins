@@ -1,0 +1,8 @@
+{
+  "name": "basic",
+  "description": "Personal dev toolkit — subagents for context isolation and skills for domain-specific coding guidance.",
+  "author": {
+    "name": "Jason",
+    "email": "jason@lecstor.com"
+  }
+}
