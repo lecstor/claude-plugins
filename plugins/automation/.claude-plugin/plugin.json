@@ -1,0 +1,8 @@
+{
+  "name": "automation",
+  "description": "Unattended task execution — the work-phase coordinator drives a project's task list, dispatching task-worker subagents to complete, verify, and commit each task in a loop.",
+  "author": {
+    "name": "Jason",
+    "email": "jason@lecstor.com"
+  }
+}

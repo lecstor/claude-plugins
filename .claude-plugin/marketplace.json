@@ -8,14 +8,14 @@
   },
   "plugins": [
     {
-      "name": "basic",
-      "description": "Personal dev toolkit — subagents for context isolation and skills for domain-specific coding guidance.",
+      "name": "development",
+      "description": "Personal collection of Claude Code skills — domain-specific coding guidance loaded on demand.",
       "author": {
         "name": "Jason",
         "email": "jason@lecstor.com"
       },
       "category": "workflow",
-      "source": "./plugins/basic"
+      "source": "./plugins/development"
     },
     {
       "name": "context-management",
@@ -26,6 +26,26 @@
       },
       "category": "workflow",
       "source": "./plugins/context-management"
+    },
+    {
+      "name": "automation",
+      "description": "Unattended task execution — the work-phase coordinator drives a project's task list, dispatching task-worker subagents to complete, verify, and commit each task in a loop.",
+      "author": {
+        "name": "Jason",
+        "email": "jason@lecstor.com"
+      },
+      "category": "workflow",
+      "source": "./plugins/automation"
+    },
+    {
+      "name": "tools",
+      "description": "Skills for driving external developer tools and services from Claude Code — Sentry CLI, Cloudflare Workers secrets.",
+      "author": {
+        "name": "Jason",
+        "email": "jason@lecstor.com"
+      },
+      "category": "workflow",
+      "source": "./plugins/tools"
     }
   ]
 }

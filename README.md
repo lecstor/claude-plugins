@@ -6,8 +6,10 @@ Personal Claude Code plugin marketplace.
 
 | Plugin | Description |
 |---|---|
-| [basic](plugins/basic) | Personal dev toolkit — subagents for context isolation and skills for domain-specific coding guidance. |
+| [development](plugins/development) | Personal collection of Claude Code skills — domain-specific coding guidance loaded on demand. |
 | [context-management](plugins/context-management) | Subagent set for context isolation — coder, docs-lookup, test-runner, review, browser. |
+| [automation](plugins/automation) | Unattended task execution — the work-phase coordinator drives a project's task list, dispatching task-worker subagents to complete, verify, and commit each task in a loop. |
+| [tools](plugins/tools) | Skills for driving external developer tools and services — Sentry CLI, Cloudflare Workers secrets. |
 
 ## Use this marketplace
 
@@ -15,7 +17,7 @@ Install via the **Claude Code CLI** — the desktop app doesn't expose `/plugin`
 
 ```
 /plugin marketplace add lecstor/claude-plugins
-/plugin install basic@lecstor-claude-plugins
+/plugin install development@lecstor-claude-plugins
 ```
 
 Or run `/plugin` to browse interactively. Plugins installed via the CLI are picked up by the desktop app automatically — they share the same `~/.claude/settings.json`.
@@ -34,7 +36,7 @@ Or run `/plugin` to browse interactively. Plugins installed via the CLI are pick
     }
   },
   "enabledPlugins": {
-    "basic@lecstor-claude-plugins": true
+    "development@lecstor-claude-plugins": true
   }
 }
 ```

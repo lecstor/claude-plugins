@@ -1,0 +1,8 @@
+{
+  "name": "tools",
+  "description": "Skills for driving external developer tools and services from Claude Code — Sentry CLI, Cloudflare Workers secrets.",
+  "author": {
+    "name": "Jason",
+    "email": "jason@lecstor.com"
+  }
+}
