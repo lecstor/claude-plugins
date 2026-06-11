@@ -3,9 +3,9 @@
 Default to delegating. Reading files, running tests, looking up docs, and exploring code all bloat the main context with output the user never sees. Push that work to subagents so only summaries return.
 
 Use a subagent whenever a task involves:
-- Reading more than 2 files to answer a question → **Explore** (code) or **docs-lookup** (third-party libraries)
+- Reading more than 2 files to answer a question → **scout** (code) or **docs-lookup** (third-party libraries)
 - Running tests or any command with verbose output → **test-runner**
-- Surveying unfamiliar code, mapping call graphs, finding usages → **Explore**
+- Surveying unfamiliar code, mapping call graphs, finding usages → **scout**
 - Browser/UI verification → **browser**
 - Reviewing a diff before commit → **review**
 - Executing a fully-specified, mechanical code edit (especially in parallel batches) → **coder**

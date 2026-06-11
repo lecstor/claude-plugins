@@ -6,6 +6,7 @@ Subagent set for Claude Code that keeps the main agent's context window lean by 
 
 | Subagent | Model | Purpose |
 |---|---|---|
+| **scout** | sonnet | Read-only code investigator — survey unfamiliar code, map call graphs, find usages, answer multi-file questions. Returns `file:line` summaries, not raw dumps. Never edits or runs tests. |
 | **coder** | sonnet | Execute fully-specified, mechanical code edits. Designed for parallel dispatch. Escalates back when anything is ambiguous. |
 | **docs-lookup** | haiku | Look up library/framework docs via Context7 MCP (if installed) or `WebFetch`. |
 | **test-runner** | haiku | Run `pnpm test` / `pnpm e2e` (or equivalents). Read-only — returns structured pass/fail report, never edits code. |
